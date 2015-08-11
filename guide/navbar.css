@@ -1,0 +1,46 @@
+/* Main Text Body */
+body {margin: 0; padding: 0; font-family:"Verdana",sans-serif; font-size:95%}
+
+/* Navbar Container */
+nav {width: 99.99%; height: 50px; margin: 0; z-index: 99; position: relative; background-color: #003366}
+
+/* Navbar Components */
+ul.navbar{height: 50px; padding: 0; margin: 0; left: 0; position: absolute; border-right: 1px solid #003366; width: 100%; list-style: none}
+ul.navbar li {list-style: none}
+
+/* Top Level Buttons (Always Open) */
+
+/* Makes the anchors a proper block, instead of a hyperlink. */
+ul.navbar li a	{padding: 18px 0; border-left: 2px solid #336699; border-right: 1px solid #336699; text-decoration: none; color: white; display: block} 
+
+
+ul.navbar li.titlebar {width: 25%; float: left; display: block; text-align: center; list-style: none; padding: 0; margin: 0; background-color: #003366; text-transform: uppercase; font-weight: bold; overflow: hidden}
+ul.navbar li.titlebar a {width: 100%; height: 100%; float: left; display: block; text-align: center; list-style: none; padding: 18px, 0px, 18px, 0px; margin: 0; background-color: #003366; text-transform: uppercase; font-weight: bold; overflow: hidden}
+ul.navbar li.titlebarcurrent {width: 24.9999999999999999%; float: left; display: block; text-align: center; list-style: none; padding: 0; margin: 0; background-color: #000040; text-transform: uppercase; font-weight: bold; overflow: hidden}
+ul.navbar li.titlebarcurrent a {width: 100%; height: 100%; float: left; display: block; text-align: center; list-style: none; padding: 18px, 0px, 18px, 0px; margin: 0; background-color: #000040; text-transform: uppercase; font-weight: bold; overflow: hidden}
+
+
+ul.navbar li.titlebar li.subbar {width: 100%; height: 20px; text-transform: none}
+ul.navbar li.titlebar li.subbar a {width: 100%; height: 20px; text-transform: none}
+ul.navbar li.titlebar li.subbarcurrent {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebar li.subbarcurrent a {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebarcurrent li.subbar {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebarcurrent li.subbar a {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebarcurrent li.subbarcurrent {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebarcurrent li.subbarcurrent a {width: 100%; height: 20px; text-transform: none; background-color: #003366}
+ul.navbar li.titlebar:hover > a {background-color: #54879D}
+ul.navbar li.titlebar:hover {background-color: #54879D}
+ul.navbar li.titlebar:hover, a {background-color: #54879D}
+ul.navbar li.titlebar:hover, a:hover {background-color: #54879D}
+ul.navbar li.titlebarcurrent:hover > a {background-color: #54879D}
+ul.navbar li.titlebarcurrent:hover {background-color: #54879D}
+ul.navbar li.titlebarcurrent:hover, a {background-color: #54879D}
+ul.navbar li.titlebarcurrent:hover, a:hover {background-color: #54879D}
+ul.navbar li li.subbarcurrent > a:hover {background-color: #54879D}
+ul.navbar li li.subbar > a:hover {background-color: #54879D}
+ul.navbar li li.subbarcurrent a:not(:hover)  {background-color: #000040}
+
+ul.navbar li ul {display: none; height: auto; margin: 0; padding: 0}
+ul.navbar li:hover ul {display: block}
+ul.navbar li ul li a {border-left: 1px solid #1f5065; border-right: 1px solid #1f5065; border-top: 1px solid #74a3b7; border-bottom: 1px solid #1f5065; background-color: #54879d}
+ul.navbar li ul li a:hover {background-color: #366b82}

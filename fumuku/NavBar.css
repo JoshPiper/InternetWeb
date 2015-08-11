@@ -1,0 +1,9 @@
+ul.navbar { background: none; background-color: #003366 ; font-weight: bold; padding: 6px 0px; position: relative; top: -16px; }
+li.navbar { display: inline; margin-bottom: 8px; margin-top: 8px ; padding-bottom: 5px ; margin-bottom: 20px}
+a.current:link, a.current:visited { width: 120px; font-weight: bold; color: #FFFFFF; background-color: #404040; text-align: center; padding: 4px; text-decoration: none; text-transform: uppercase; }
+a.other:link, a.other:visited { width: 120px; font-weight: bold; color: #FFFFFF; background-color: #646464; text-align: center; padding: 4px; text-decoration: none; text-transform: uppercase; }
+a.current:hover, a.current:active, a.other:hover, a.other:active { color: #FFFFFF ;background-color: #282828; }
+a.current { background: #404040 }
+#lowercase{ text-transform: none }
+#linkMove { position: relative; left: 4px; margin-right: 4px }
+div.navbar { margin:5px; display: inline-block; }

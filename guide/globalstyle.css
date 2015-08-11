@@ -1,0 +1,36 @@
+/* Main Body */
+body {font-family:"Verdana",sans-serif; font-size:95%; background:#ffffff; color:#000000; cursor:default; margin:0; padding:0}
+
+/* Tags */
+h1 {padding:16px 0px 8px 15px; border:#336699 0px solid; border-width:0px 0px 6px 0px; font-size:150%; font-weight:bold ; background:#003366; color:#ffffff; margin: 0}
+h2 {margin:20px 0px 7px 5px; font-size:135%; font-weight:normal}
+h3 {font-size: 110%; font-weight:normal}
+article {padding-left: 5px; padding-bottom: 5px}
+section {padding-bottom: 10px }
+p {margin: 8px}
+hr{margin: 1px; margin-left: 0}
+div{margin: 0}
+img{padding-top: 7px}
+
+/* Tags with Class */
+h1.regular{background: #ffffff; color: #000000; border: 0px}
+h2.regular{background: #ffffff; color: #000000; border: 0px}
+h3.regular{background: #ffffff; color: #000000; border: 0px}
+
+/* Tags with ID*/
+
+/* Tags with Status */
+a:link, a:visited, a:active {color:#336699}
+a:hover {color:#003366}
+
+/* Class */
+
+/* Class with ID */
+
+/* Class with Status */
+
+/* ID */
+
+/* ID with Status */
+
+/* Status */

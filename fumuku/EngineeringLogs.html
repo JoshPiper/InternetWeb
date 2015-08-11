@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- Copyright (c) OpenGlobal. GNU/GPL V3 licence. You may copy and modify this, providing the link to http://www.openglobal.co.uk remains intact. -->
+<div id="openglobal_privacy_widget" style="display: inline; text-align:right; font-size: 13px; line-height: 100%; position: fixed; top: 0; right: 0; margin: 0; padding: 0 0 0 3px; background: #dddddd; z-index: 100000; opacity:0.9; filter: alpha(opacity=90);">
+Accept <a title="This website uses cookies to store information on your computer. Some of these cookies are used for visitor analysis, others may be necessary for the website to function properly. You should configure your browser to only accept the cookies you wish to approve, or leave this website." rel="privacy" href="privacypolicy.html">Cookies</a>?
+<button id="openglobal_privacy_accept" style="vertical-align: middle;" onclick="openglobal_privacy_accept();return false;">Yes</button>
+<button id="openglobal_privacy_wait" style="vertical-align: middle;" onclick="clearTimeout(openglobal_privacy_timer);return false;">Wait</button>
+<button id="openglobal_privacy_leave" style="vertical-align: middle;" onclick="window.location='http://www.change.org/petitions/stop-the-eu-s-legal-war-on-web-cookies';">Leave</button>
+<br />
+<span style="font-size: 9px">Provided by <a href="http://www.openglobal.co.uk" title="OpenGlobal e-commerce web design and promotion">OpenGlobal E-commerce</a></span>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var openglobal_privacy_timeout = 0;
+var openglobal_privacy_functions = [];
+
+var openglobal_privacy_widget = document.getElementById('openglobal_privacy_widget');
+var results = document.cookie.match ( '(^|;) ?openglobal_privacy_widget=([^;]*)(;|$)' );
+if (results) {
+  if (1 == unescape(results[2])) {
+    openglobal_privacy_accept();
+  }
+} else {
+  window.onload = function() {
+    for (var i = 0; i < document.links.length; i++) {
+      var link_href = document.links[i].getAttribute('href');
+      if ('privacy' != document.links[i].getAttribute('rel') && (!/^[\w]+:/.test(link_href) || (new RegExp('^[\\w]+://[\\w\\d\\-\\.]*' + window.location.host)).test(link_href))) {
+        var current_onclick = document.links[i].onclick;
+document.links[i].onclick = function() {openglobal_privacy_accept();if (Object.prototype.toString.call(current_onclick) == '[object Function]') {current_onclick();}};
+      }
+    }
+  };
+}
+
+var openglobal_privacy_timer;
+if (openglobal_privacy_timeout > 0) {
+   openglobal_privacy_timer = setTimeout('openglobal_privacy_tick()', 1000);
+} else {
+  var openglobal_privacy_wait = document.getElementById('openglobal_privacy_wait');
+  if (null != openglobal_privacy_wait) {
+    openglobal_privacy_wait.parentNode.removeChild(openglobal_privacy_wait);
+  }
+}
+function openglobal_privacy_tick() {
+  if (0 >= --openglobal_privacy_timeout) {
+    openglobal_privacy_accept();
+    return;
+  }
+  var openglobal_privacy_accept_button = document.getElementById('openglobal_privacy_accept');
+  if (null != openglobal_privacy_accept_button) {
+    openglobal_privacy_accept_button.innerHTML = 'Yes (' + openglobal_privacy_timeout + ')';
+    openglobal_privacy_timer = setTimeout('openglobal_privacy_tick()', 1000);
+  }
+}
+
+function openglobal_privacy_accept() {
+  clearTimeout(openglobal_privacy_timer);
+  document.cookie = 'openglobal_privacy_widget=1; path=/; expires=Mon, 18 Jan 2038 03:14:00 GMT';
+  openglobal_privacy_widget.parentNode.removeChild(openglobal_privacy_widget);
+  for (var i = 0; i < openglobal_privacy_functions.length; i++) {
+    openglobal_privacy_functions[i]();
+  }
+}
+//]]>
+</script>
+
+
+<header>
+<link href="GlobalStyle.css" rel="stylesheet", content="text/css">
+<link href="LogsStyle.css" rel="stylesheet", content="text/css">
+<meta http-equiv="Content-Type" content="text/html"; charset=utf-8">
+<title>Vehicle Engineering Logs - FUMUKU International</title>
+</header>
+
+
+<body>
+<head><h1>FUMUKU International Standard Engineering Logbook [Vehicle Workshop]</h1></head>
+<h1><hr></h1>
+
+
+
+<h2>Basic Information</h2>
+<div class="infotable">
+<table>
+<tr><td class="border-l longline">Lead Engineer:</td>
+<td class="longline">Dr. John Internet</td></tr>
+<tr><td class="border-l longline">Lead Director:</td>
+<td class="longline">Robert Lynch</td></tr>
+<tr><td class="border-l longline">Effective Department:</td>
+<td class="longline">Security</td></tr>
+<tr><td class="border-l longline">Logbook Region:</td>
+<td class="longline">EvoCity</td></tr>
+</table>
+<hr><hr>
+</div>
+<h2>Logbook Notice:</h2>
+This logbook can be filled in by any member of FUMUKU International with <b>-[ANY]-</b> of the following:
+<ul><td>Class Ranking B and Above</td><br>
+<td>A Level 2 - Protocol and Procedure Training Course.</td><br>
+<td>Permission from Class Ranking A+ or A++.</td><br>
+<td>Permission from Lead Engineer.</td><br>
+<td>Permission from Chief Workshop Engineer.</td><br>
+</ul>
+Failure to abide by these restrictions will result in access to FUMUKU Workshops being revoked, as well as discounted personal vehicle repairs being nullified.<br>
+Reports which are not up to standard and point towards malicious intent will be reviewed by a Class A+ Director.
+<hr><hr>
+
+<h2>Logs</h2>
+<table class="infotable">
+<div class="delimiter"></div><table class="infotable longlines">
+<col width="10%"></col>
+<col width="10%"></col>
+<col width="10%"></col>
+<col width="10%"></col>
+<col width="25%"></col>
+<col width="10%"></col>
+<col width="10%"></col>
+<col width="10%"></col>
+<tr class="header"><td colspan="8">Vehicle Workshop Logs</td></tr>
+<tr class="header">
+<td colspan="1">Requesting Officer</td>
+<td colspan="1">Workshop Engineer</td>
+<td colspan="1">License Plate</td>
+<td colspan="2">Description</td>
+<td colspan="1">Signed Off?</td>
+<td colspan="1">Vehicle Type</td>
+<td colspan="1">Date/Time</td>
+</tr>
+<tr><td>Gordon Leary</td><td>Dr Internet</td><td>FI-SD05</td><td>Water Damage</td><td>Driving off a waterfall</td><td>Yes</td><td>Company [Security]</td><td>14/7/13 15:32</td></tr>
+<tr><td></td><td></td><td></td><td>Crash Damage</td><td>Driving off a waterfall</td><td>Yes</td><td>Company [Security]</td><td>14/7/13 15:32</td></tr>
+<tr><td></td><td></td><td></td><td>Electronics Damage</td><td>Driving off a waterfall</td><td>Yes</td><td>Company [Security]</td><td>14/7/13 15:32</td></tr>
+<tr><td></td><td></td><td></td><td>Engine Damage</td><td>Driving off a waterfall</td><td>Yes</td><td>Company [Security]</td><td>14/7/13 15:32</td></tr>
+<tr><td></td><td></td><td></td><td>Bullet Damage</td><td>Holstered Rifle Set off after ^</td><td>Yes</td><td>Company [Security]</td><td>14/7/13 15:32</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Vehicle Replaced, Removed from Security Budget, Leary placed on driver's course, Leary fined $6,750 for damage to company property.</td><td><b>Signed Off By:</b> Robert Lynch [A+]</td><td>Security Division</td><td>15/7/13 10:51</td></tr>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Steph &quot;Jinx&quot; Catalano</td><td>Dr Internet</td><td>FI-SD77</td><td>Water Damage</td><td>Handbrake left off whilst on a sloped pier.</td><td>Yes</td><td>Company [Security]</td><td>14/11/13 17:16</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Vehicle Replaced, Removed from Security Budget, Catalano yelled at by Security Engineer Internet [A].</td><td><b>Signed Off By:</b> J. Internet [A]</td><td>Security Division</td><td>17/11/13 06:20</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Ivan Tempski</td><td>Dr Internet</td><td>FI-SD25</td><td>Standard Service</td><td>Yearly Service.</td><td>Yes</td><td>Company [Security]</td><td>25/2/14 13:34</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Vehicle Serviced, AirCon Fluid Replaced, Radiators Refilled, CB Radio Ariel Replaced, CLS Fixed.</td><td><b>Signed Off By:</b> John Internet [A]</td><td>Security Division</td><td>25/2/14 13:34</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Jericho McAndrews</td><td>Dr Internet</td><td>FI-SDIA</td><td>Bullet Damage</td><td>Pursuit</td><td>Yes</td><td>Company [Security]</td><td>27/9/14 15:43</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Radiator Fixed, Supercharger Replaced, Bullets Removed.</td><td><b>Signed Off By:</b> John Internet [A]</td><td>Security Division</td><td>28/9/14 02:12</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Robert Lynch</td><td>Dr Internet</td><td>FI-SD01</td><td>Explosion Damage</td><td>Gate Closed on Hummer Roof, resulting in explosion.</td><td>Yes</td><td>Company [Security]</td><td>29/9/14 06:12</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Hummer Replaced, Lynch fixed with a long, hard stare.</td><td><b>Signed Off By:</b> Jericho McAndrews [A+]</td><td>Security Division</td><td>30/9/14 02:10</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Gordon Leary</td><td>Dr Internet</td><td>FI-SD05</td><td>Vehicle Trapped</td><td>Vehicle Fell into Inspection Pit after operation.</td><td>Yes</td><td>Company [Security]</td><td>29/9/14 06:12</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Hummer Extracted from Pit, Crane For Workshop Installed, Internet Swore for Several Hours.</td><td><b>Signed Off By:</b> Jericho McAndrews [A+]</td><td>Security Division</td><td>30/9/14 02:10</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Cody &quot;Casanova&quot; Williams</td><td>Dr Internet</td><td>COH-132</td><td>Wheel Alignment Error</td><td>Garage failed to correctly align wheels.</td><td>Yes</td><td>Personal [BMW M5 Series]</td><td>29/9/14 15:12</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Wheels Aligned, Tyres re inflated with Nitrogen, Rear Drivers-side break pads replaced.</td><td><b>Signed Off By:</b> Dr. Internet [A]</td><td>Security Division</td><td>30/9/14 02:11</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td>Anthony Gambino</td><td>Dr Internet</td><td>FI-SD15</td><td>Missing Kevlar Sheet in Forward Driver's Door</td><td>Upon initial inspection, kevlar plate found to be missing after delivery.</td><td>Yes</td><td>Company [Security]</td><td>1/10/14 11:52</td></tr>
+<tr><td><b>Action Taken:</b></td><td colspan="4">Vehicle returned to manufacturer for replacement, spare vehicle issued to the class C.</td><td><b>Signed Off By:</b> Dr. J Internet [A]</td><td>Security Division</td><td>2/10/14 01:02</td>
+<tr><td colspan="8"><hr></td></tr>
+<tr><td colspan="8">What the fuck was Internet doing in at 1 in the morning? -McAndrews&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What the fuck are you doing writing in my logbook? -Internet</td></tr>
+<hr>
+
+</tr>
+</body>

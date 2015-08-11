@@ -1,0 +1,14 @@
+	table { border-collapse:collapse; }
+	table td { padding:3px 5px; }
+	.infotable { font-size:70% }
+	div.infotable { width:100%; font-size:70%; border-bottom:1px solid #e7e7ce; }
+	.infotable table { width:100%; }
+	.infotable .header td { font-weight:bold; background:#cecf9c; border:1px solid #cecf9c; border-bottom:1px solid #ffffff; }
+	.infotable .content td { background:#e7e7ce; border:0px solid #ffffff; border-width:0px 1px; }
+	.infotable .foot-r { padding-right:10px; text-align:right; }
+	.infotable .foot-l { padding-left:10px; text-align:left; }
+	.infotable td.border-l { border-left:1px solid #e7e7ce; }
+	.infotable td.border-r { border-right:1px solid #e7e7ce; }
+	.infotable tr:hover { background:#BDBDBD; }
+	table.longlines {table-layout:fixed;}
+	table.longlines td {word-wrap:break-word; -ms-word-wrap:break-word;}

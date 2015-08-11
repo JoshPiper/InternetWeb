@@ -1,0 +1,19 @@
+body { font-family:"Verdana",sans-serif; font-size:100%; background:#ffffff; color:#000000; cursor:default; }
+        body,table,td,h1,h2,hr { margin:0px; padding:0px; }
+        a:link, A:visited, A:active { color:#336699; }
+        a:hover { color:#003366; }
+        h1 { padding:16px 0px 8px 15px; border:#336699 0px solid; border-width:0px 0px 6px 0px; font-size:130%; font-weight:normal; background:#003366; color:#ffffff; }
+        h2 { margin:20px 0px 7px 5px; font-size:80%; }
+        div.center { margin:0px 10px; }
+        .delimiter { display:block; height:15px; overflow:hidden; }
+        .note { display:block; padding:0px 10px 0px 5px; font-size:70%; background:#ffffff; color:#0066DD; }
+        .footer { padding:15px 0px; border-top:4px solid #cccccc; }
+		#Title { font-size: 115% }
+		#mainPage{ margin-left: auto; margin-right: auto; width: 100%; overflow: auto; }
+		div.left{ float: left; width: 25%; padding: 10px; margin-left: 25px; margin-top: 10px}
+		div.right{ float: left; width: 25%; padding: 10px; margin-left: 25px; margin-top: 10px}
+		div.center { float: left; width: 35%; padding: 10px; display: block; margin-left: 25px; margin-top: 10px; }
+		article { padding-left: 5px }
+		section { padding-bottom: 10px }
+		#tblPad { padding-left: 5px }
+		#regularPad { margin-left: 5px }

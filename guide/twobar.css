@@ -1,0 +1,8 @@
+/* Two Bar Style.
+To apply the style to a item, use <tag class="position"> with position being one of the two below. */
+
+/* Class */
+.left{float: left; width: 44.5%; padding: 2%; margin-left: 2%; margin-top: 0; padding-left: 1%; text-align: justify}
+.right{float: right; width: 44.5%; padding: 2%; margin-right: 2%; margin-top: 0; padding-left: 1%; text-align: justify}
+.imgmove{padding-left: 10%}
+.norm{padding: 1%; float: left; width: 98%}
